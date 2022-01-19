@@ -113,7 +113,6 @@ header {
 		font-family: $font-title;
 		color: $primary;
 		font-size: 40px;
-		font-weight: 700;
 		margin-bottom: 20px;
 	}
 	.hero__description__text {
@@ -156,7 +155,6 @@ svg .flame {
 .service-title,
 .title {
 	font-family: $font-title;
-	font-weight: 700;
 	font-size: 40px;
 	line-height: 53px;
 	text-transform: uppercase;
@@ -222,7 +220,8 @@ svg .flame {
 	}
 }
 
-.tech-stack .title {
+.tech-stack .title,
+.article .title {
 	color: $secondary;
 }
 
@@ -230,5 +229,47 @@ svg .flame {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.tech-stack,
+.article {
 	margin-bottom: 150px;
+}
+
+.article-item {
+	margin-bottom: 40px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	article {
+		display: flex;
+		padding: 10px;
+	}
+}
+
+.article-item img {
+	width: 40%;
+	margin-right: 30px;
+}
+
+.article-item__title {
+	font-family: $font-title;
+	color: $primary;
+	font-size: 30px;
+	line-height: 35px;
+	margin-bottom: 25px;
+}
+
+.article-item__description {
+	font-size: 20px;
+	line-height: 32px;
+	color: $neutral-1;
+	margin-bottom: 30px;
+}
+
+.article-item__copy {
+	color: $primary;
+	font-size: 13px;
+	text-decoration: none;
+	cursor: pointer;
 }
