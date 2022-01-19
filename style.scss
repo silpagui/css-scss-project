@@ -3,10 +3,19 @@
 body {
 	background: $base;
 	font-family: $font-body;
+	margin: auto 0;
 }
 
 header {
-	padding: 5px 20px;
+	padding-top: 5px;
+}
+
+.content-layout {
+	max-width: 1440px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 .navigation,
@@ -58,6 +67,7 @@ header {
 	text-decoration: none;
 	color: $neutral;
 	transition: all 0.3s ease;
+	font-weight: 700;
 	&:hover {
 		color: $primary;
 	}
@@ -81,4 +91,31 @@ header {
 	li {
 		padding: 5px;
 	}
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	min-height: 85vh;
+}
+
+.hero__description {
+	width: 50%;
+	margin-right: 20px;
+	.hero__description__title {
+		font-family: $font-title;
+		color: $primary;
+		font-size: 40px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	.hero__description__text {
+		font-size: 25px;
+		line-height: 30px;
+		color: $neutral-1;
+	}
+}
+
+.hero svg {
+	width: 50%;
 }
