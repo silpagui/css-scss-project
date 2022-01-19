@@ -1,12 +1,17 @@
 @import "./assets/scss/variables.scss";
 
 body {
+	position: relative;
 	background: $base;
 	font-family: $font-body;
 	margin: auto 0;
 }
 
 header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
 	padding-top: 5px;
 }
 
@@ -96,7 +101,9 @@ header {
 .hero {
 	display: flex;
 	align-items: center;
-	min-height: 85vh;
+	min-height: 100vh;
+	padding-top: 100px;
+	margin-bottom: 30px;
 }
 
 .hero__description {
@@ -121,11 +128,11 @@ header {
 }
 
 svg .ligth {
-	animation: opacity-pulse 3s ease 2s infinite;
+	animation: opacity-pulse 3s ease 0s infinite;
 }
 
 svg .flame {
-	animation: opacity-pulse 2s ease 2s infinite;
+	animation: opacity-pulse 2s ease 0s infinite;
 }
 
 @keyframes opacity-pulse {
@@ -137,5 +144,78 @@ svg .flame {
 	}
 	100% {
 		opacity: 0.3;
+	}
+}
+
+.service-title,
+.service-item {
+	text-align: center;
+}
+
+.service-title {
+	font-family: $font-title;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 53px;
+	text-transform: uppercase;
+	margin: 0 0 164px 0;
+	color: $primary;
+}
+
+.service-container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 150px;
+}
+
+.service-item {
+	max-width: 330px;
+	border: 3px solid $primary;
+	border-radius: 10px;
+	padding: 60px 25px 62px;
+	margin: 0 20px 0 0;
+	box-sizing: border-box;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.service-item__title {
+	font-family: $font-title;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 39px;
+	text-transform: uppercase;
+	color: $secondary;
+	margin: 0 0 27px 0;
+}
+
+.service-item__description {
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0.03em;
+	color: $neutral-2;
+	margin: 0 0 77px 0;
+}
+
+.button {
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	text-transform: uppercase;
+	width: 100%;
+	max-width: 267px;
+	height: 74px;
+	cursor: pointer;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+	background: $primary;
+	color: $base;
+	border: none;
+	border-radius: 10px;
+	&:hover {
+		color: $neutral;
+		background: $secondary;
 	}
 }
