@@ -145,11 +145,13 @@ svg .flame {
   }
 }
 .service-title,
-.service-item {
+.service-item,
+.title {
   text-align: center;
 }
 
-.service-title {
+.service-title,
+.title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -215,6 +217,17 @@ svg .flame {
 .button:hover {
   color: #000;
   background: #94535d;
+}
+
+.tech-stack .title {
+  color: #94535d;
+}
+
+.tech-stack__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
