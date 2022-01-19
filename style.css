@@ -271,4 +271,43 @@ svg .flame {
   cursor: pointer;
 }
 
+.contact-form {
+  background: #f98826;
+  padding: 20px 0;
+  color: #fff;
+}
+.contact-form ul {
+  max-width: 400px;
+  margin: auto;
+}
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: content-box;
+}
+
+.contact-form__item label {
+  display: block;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.submit-btn {
+  background: #94535d;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: #bdbdbd;
+  color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */

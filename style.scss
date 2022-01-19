@@ -273,3 +273,42 @@ svg .flame {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.contact-form {
+	background: $primary;
+	padding: 20px 0;
+	color: $base;
+	ul {
+		max-width: 400px;
+		margin: auto;
+	}
+	input,
+	textarea {
+		border: none;
+		margin-bottom: 20px;
+		width: 100%;
+		padding: 15px;
+		border-radius: 15px;
+		font-family: $font-body;
+		box-sizing: content-box;
+	}
+}
+
+.contact-form__item label {
+	display: block;
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.submit-btn {
+	background: $secondary;
+	font-size: 20px;
+	line-height: 30px;
+	color: $base;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	&:hover {
+		background: $neutral-3;
+		color: $neutral;
+	}
+}
