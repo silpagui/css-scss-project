@@ -1,0 +1,84 @@
+@import "./assets/scss/variables.scss";
+
+body {
+	background: $base;
+	font-family: $font-body;
+}
+
+header {
+	padding: 5px 20px;
+}
+
+.navigation,
+.sub-menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-list-top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.nav-list-top li {
+	padding: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+	transition: all ease 0.3s;
+	&:hover {
+		transform: scale(1.5);
+	}
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.navigation__bottom {
+	border-top: 1px $primary solid;
+	padding: 20px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu__item {
+	position: relative;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.menu__item a {
+	text-decoration: none;
+	color: $neutral;
+	transition: all 0.3s ease;
+	&:hover {
+		color: $primary;
+	}
+}
+
+.menu__item:hover > .sub-menu {
+	max-height: 600px;
+}
+
+.sub-menu {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	overflow: hidden;
+	max-height: 0;
+	transition: all 1s ease;
+	&:hover {
+		overflow: visible;
+	}
+	li {
+		padding: 5px;
+	}
+}
