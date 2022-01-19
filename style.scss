@@ -119,3 +119,23 @@ header {
 .hero svg {
 	width: 50%;
 }
+
+svg .ligth {
+	animation: opacity-pulse 3s ease 2s infinite;
+}
+
+svg .flame {
+	animation: opacity-pulse 2s ease 2s infinite;
+}
+
+@keyframes opacity-pulse {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 0.3;
+	}
+}
