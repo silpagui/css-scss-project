@@ -32,22 +32,25 @@ header {
   justify-content: space-between;
 }
 
-.nav-list-top {
+.nav-list-top,
+.social-media {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
 }
 
-.nav-list-top li {
+.nav-list-top li,
+.social-media li {
   padding: 5px;
   cursor: pointer;
   margin-right: 10px;
   transition: all ease 0.3s;
 }
-.nav-list-top li:hover {
+.nav-list-top li:hover,
+.social-media li:hover {
   transform: scale(1.5);
 }
-.nav-list-top li:last-child {
+.nav-list-top li:last-child,
+.social-media li:last-child {
   margin: 0;
 }
 
@@ -308,6 +311,15 @@ svg .flame {
 .submit-btn:hover {
   background: #bdbdbd;
   color: #000;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #828282;
 }
 
 /*# sourceMappingURL=style.css.map */

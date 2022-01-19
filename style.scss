@@ -34,13 +34,14 @@ header {
 	justify-content: space-between;
 }
 
-.nav-list-top {
+.nav-list-top,
+.social-media {
 	display: flex;
 	align-items: center;
-	margin-bottom: 5px;
 }
 
-.nav-list-top li {
+.nav-list-top li,
+.social-media li {
 	padding: 5px;
 	cursor: pointer;
 	margin-right: 10px;
@@ -311,4 +312,13 @@ svg .flame {
 		background: $neutral-3;
 		color: $neutral;
 	}
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: $neutral-2;
 }
