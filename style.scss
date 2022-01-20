@@ -7,7 +7,14 @@ body {
 	margin: auto 0;
 }
 
-header {
+h1,
+h2,
+h3 {
+	font-family: $font-title;
+	color: $primary;
+}
+
+.header {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -40,10 +47,22 @@ header {
 	align-items: center;
 }
 
-.nav-list-top li,
-.social-media li {
+.nav-list-top,
+.social-media {
+	a,
+	img {
+		display: block;
+	}
+}
+
+.nav-list-top a,
+.social-media a {
 	padding: 5px;
 	cursor: pointer;
+}
+
+.nav-list-top li,
+.social-media li {
 	margin-right: 10px;
 	transition: all ease 0.3s;
 	&:hover {
@@ -84,7 +103,6 @@ header {
 }
 
 .sub-menu {
-	display: block;
 	position: absolute;
 	left: 50%;
 	top: 100%;
@@ -94,7 +112,7 @@ header {
 	&:hover {
 		overflow: visible;
 	}
-	li {
+	a {
 		padding: 5px;
 	}
 }
@@ -110,28 +128,28 @@ header {
 .hero__description {
 	width: 50%;
 	margin-right: 20px;
-	.hero__description__title {
-		font-family: $font-title;
-		color: $primary;
-		font-size: 40px;
-		margin-bottom: 20px;
-	}
-	.hero__description__text {
-		font-size: 25px;
-		line-height: 30px;
-		color: $neutral-1;
-	}
+}
+
+.description-title {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.description-text {
+	font-size: 25px;
+	line-height: 30px;
+	color: $neutral-1;
 }
 
 .hero svg {
 	width: 50%;
 }
 
-svg .ligth {
+.ligth {
 	animation: opacity-pulse 3s ease 0s infinite;
 }
 
-svg .flame {
+.flame {
 	animation: opacity-pulse 2s ease 0s infinite;
 }
 
@@ -155,7 +173,6 @@ svg .flame {
 
 .service-title,
 .title {
-	font-family: $font-title;
 	font-size: 40px;
 	line-height: 53px;
 	text-transform: uppercase;
@@ -175,7 +192,6 @@ svg .flame {
 	border: 3px solid $primary;
 	border-radius: 10px;
 	padding: 60px 25px 62px;
-	margin: 0 20px 0 0;
 	box-sizing: border-box;
 	&:last-child {
 		margin: 0;
@@ -183,7 +199,6 @@ svg .flame {
 }
 
 .service-item__title {
-	font-family: $font-title;
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 39px;
@@ -207,7 +222,7 @@ svg .flame {
 	text-transform: uppercase;
 	width: 100%;
 	max-width: 267px;
-	height: 74px;
+	padding: 30px 0;
 	cursor: pointer;
 	box-sizing: border-box;
 	transition: all 0.3s ease;
@@ -254,8 +269,6 @@ svg .flame {
 }
 
 .article-item__title {
-	font-family: $font-title;
-	color: $primary;
 	font-size: 30px;
 	line-height: 35px;
 	margin-bottom: 25px;
@@ -283,16 +296,19 @@ svg .flame {
 		max-width: 400px;
 		margin: auto;
 	}
-	input,
-	textarea {
-		border: none;
+	li {
 		margin-bottom: 20px;
-		width: 100%;
-		padding: 15px;
-		border-radius: 15px;
-		font-family: $font-body;
-		box-sizing: content-box;
 	}
+}
+
+.contact-form input,
+.contact-form textarea {
+	border: none;
+	width: 100%;
+	padding: 15px;
+	border-radius: 15px;
+	font-family: $font-body;
+	box-sizing: border-box;
 }
 
 .contact-form__item label {
